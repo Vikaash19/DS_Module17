@@ -1,5 +1,5 @@
 # Ex22 Breadth First Graph
-## DATE:
+## DATE: 23.04.2025
 ## AIM:
 To write a printQueue C function of the given graph that is to be traversed in the breadth first manner.
 
@@ -17,9 +17,37 @@ To write a printQueue C function of the given graph that is to be traversed in t
 ```
 /*
 Program to traverse graph using BFS
-Developed by: 
-RegisterNumber:  
+Developed by: Vikaash K S
+RegisterNumber: 212223240179
 */
+/*#include <stdio.h> #include <stdlib.h> #define SIZE 40
+struct queue {
+int items[SIZE]; int front;
+int rear;
+};
+struct queue* createQueue();
+void enqueue(struct queue* q, int); int dequeue(struct queue* q);
+void display(struct queue* q); int isEmpty(struct queue* q);
+void printQueue(struct queue* q);
+struct node { int vertex;
+struct node* next;
+};
+struct node* createNode(int); struct Graph {
+int numVertices; struct node** adjLists; int* visited;
+};*/
+void printQueue(struct queue* q) { int i=q->front;
+if(isEmpty(q))
+{
+printf("Queue is empty");
+}
+else
+{
+printf("Queue contains "); for(i=q->front;i<q->rear+1;i++)
+{
+printf("%d ",q->items[i]);
+}
+}
+}
 ```
 
 ## Output:
